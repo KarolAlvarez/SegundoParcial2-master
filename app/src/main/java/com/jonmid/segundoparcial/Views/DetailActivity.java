@@ -22,26 +22,21 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        txt1 = (TextView)findViewById(R.id.id_tv_codedetail);
-        txt2=(TextView)findViewById(R.id.id_tv_namedetail);
+        txt1 = (TextView) findViewById(R.id.id_tv_codedetail);
+        txt2 = (TextView) findViewById(R.id.id_tv_namedetail);
 
 
-        Bundle bundle= getIntent().getExtras();
-
-
+        Bundle bundle = getIntent().getExtras();
         txt1.setText(bundle.getString("code"));
         txt2.setText(bundle.getString("name"));
 
-        img = (ImageView)findViewById(R.id.id_img_item_detail);
-
+        img = (ImageView) findViewById(R.id.id_img_item_detail);
         Picasso.with(this).load(Images.imageRandom()).into((img));
-
-
     }
 
 
-    public void toReturn(View v){
-        Intent intent= new Intent(this, TeamActivity.class);
+    public void toReturn(View v) {
+        Intent intent = new Intent(this, TeamActivity.class);
         startActivity(intent);
 
     }

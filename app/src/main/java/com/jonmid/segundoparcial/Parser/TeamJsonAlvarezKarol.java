@@ -14,6 +14,8 @@ import java.util.List;
  */
 
 public class TeamJsonAlvarezKarol {
+
+
     public static List<TeamModelAlvarezKarol> getData(String content) throws JSONException {
         JSONObject jsonObject = new JSONObject(content);
         JSONArray jsonArray=jsonObject.getJSONArray("teams");

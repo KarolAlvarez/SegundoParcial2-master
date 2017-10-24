@@ -54,8 +54,8 @@ public class TeamAdapterAlvarezKarol  extends RecyclerView.Adapter<TeamAdapterAl
         // Encargado de trabajar con el item.xml y sus componentes
 
 
-        holder.name.setText("Name: " + teamModelAlvarezKarolList.get(position).getName());
-        holder.code.setText("Email: " + teamModelAlvarezKarolList.get(position).getCode());
+        holder.name.setText("Name: "+ teamModelAlvarezKarolList.get(position).getName());
+        holder.code.setText("Codigo: "+ teamModelAlvarezKarolList.get(position).getCode());
 
 
 
